@@ -11,7 +11,161 @@
     />
   </head>
   <body>
-    <h1 class="bg-red-500">Tailwind added</h1>
+    <main class="mt-16 w-11/12 mx-auto">
+      <section class="mx-auto w-4/5 grid grid-cols-2">
+        <img src="./images/mac.png" class="w-2/5" alt="macbook image" />
+        <aside class="mb-8">
+          <h1 class="font-semibold text-3xl">
+            Customize your Blue 24-inch iMac with Apple M1 chip.
+          </h1>
+          <p class="mt-4">
+            Apple M1 chip with 8-core CPU with 4 performance cores and 4
+            efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified
+            memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse
+            Magic Keyboard - US English
+          </p>
+          <p class="mt-10 font-bold mb-2">Memory</p>
+
+          <button
+            class="
+              bg-blue-500
+              hover:bg-blue-700
+              text-white
+              font-bold
+              py-2
+              px-4
+              rounded-full
+            "
+          >
+            <span id="memory-1">8GB unified memory</span>
+          </button>
+          <button
+            class="
+              bg-blue-500
+              hover:bg-blue-700
+              text-white
+              font-bold
+              py-2
+              px-4
+              rounded-full
+            "
+          >
+            <span id="memory-2">16GB unified memory</span>
+          </button>
+          <p class="mt-10 font-bold mb-2">Storage</p>
+
+          <button
+            class="
+              bg-blue-500
+              hover:bg-blue-700
+              text-white
+              font-bold
+              py-2
+              px-4
+              rounded-full
+            "
+          >
+            <span id="SSD-1"> 256GB SSD storage</span>
+          </button>
+          <button
+            class="
+              bg-blue-500
+              hover:bg-blue-700
+              text-white
+              font-bold
+              py-2
+              px-4
+              rounded-full
+            "
+          >
+            <span id="SSD-2"> 512GB SSD storage</span>
+          </button>
+          <button
+            class="
+              bg-blue-500
+              hover:bg-blue-700
+              text-white
+              font-bold
+              py-2
+              px-4
+              rounded-full
+            "
+          >
+            <span id="SSD-3"> 1TB SSD storage</span>
+          </button>
+
+          <p class="mt-10 font-bold mb-2">Choose your delivery option</p>
+
+          <button
+            class="
+              bg-blue-500
+              hover:bg-blue-700
+              text-white
+              font-bold
+              py-2
+              px-4
+              rounded-full
+            "
+          >
+            <span id="free-delivery">Friday, Aug 25 Free Prime Delivery</span>
+          </button>
+          <button
+            class="
+              bg-blue-500
+              hover:bg-blue-700
+              text-white
+              font-bold
+              py-2
+              px-4
+              rounded-full
+            "
+          >
+            <span id="charged-delivery"
+              >Friday, Aug 21 Delivery charge $20</span
+            >
+          </button>
+
+          <div class="grid grid-cols-2 mt-8">
+            <p class="mt-2">Best price</p>
+            <p class="mt-2">$ <span id="best-price">1299</span></p>
+
+            <p class="mt-2">Extra Memory Cost</p>
+            <p class="mt-2">$ <span id="memory-cost">0</span></p>
+            <p class="mt-2">Extra Storage Cost</p>
+            <p class="mt-2">$ <span id="storage-cost">0</span></p>
+            <p class="mt-2">Delivery charge</p>
+            <p class="mt-2">$ <span id="delivery-cost">0</span></p>
+            <p class="mt-2 font-bold">Total price</p>
+            <p class="mt-2 font-bold">$ <span id="total-price">1299</span></p>
+          </div>
+
+          <p class="mt-8 font-semibold">Add Promo code</p>
+          <input
+            id="promo-input"
+            class="bg-white-200 border-2 border-gray-200 rounded py-2 px-4"
+            type="text"
+          />
+
+          <button
+            class="
+              bg-red-500
+              hover:bg-blue-700
+              text-white
+              font-bold
+              py-2
+              px-4
+              rounded
+            "
+          >
+            <span id="promo-btn"> Apply</span>
+          </button>
+        </aside>
+      </section>
+      <hr class="w-full" />
+      <h3 class="text-3xl font-semibold text-center">
+        Total : $ <span id="final-total">1299</span>
+      </h3>
+    </main>
     <script src="./js/mac.js"></script>
   </body>
 </html>
