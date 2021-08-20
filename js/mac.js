@@ -9,7 +9,7 @@ function calculateTotalPrice() {
   document.getElementById("final-total").innerText = totalPrice.innerText;
 }
 
-//function to apply promo code
+//adding event to the promocode
 
 document.getElementById("promo-btn").addEventListener("click", function () {
   const total = parseFloat(document.getElementById("total-price").innerText);
