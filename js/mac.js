@@ -4,7 +4,7 @@ function calculateTotalPrice() {
   const totalPrice = document.getElementById("total-price");
   const bestPrice = parseFloat(document.getElementById("best-price").innerText);
   totalPrice.innerText =
-    bestPrice + getCostOfMemory() + getCostOfStorage() + getCostOfDelivery();
+    bestPrice + getCost("memory") + getCost("storage") + getCost("delivery");
 
   document.getElementById("final-total").innerText = totalPrice.innerText;
 }
@@ -21,31 +21,11 @@ document.getElementById("promo-btn").addEventListener("click", function () {
   promoCodeInput.value = "";
 });
 
-//function to get cost of memory
+//function to get cost
 
-function getCostOfMemory() {
-  const costOfMemory = parseFloat(
-    document.getElementById("memory-cost").innerText
-  );
-  return costOfMemory;
-}
-
-//function to get cost of storage
-
-function getCostOfStorage() {
-  const costOfStorage = parseFloat(
-    document.getElementById("storage-cost").innerText
-  );
-  return costOfStorage;
-}
-
-//function to get cost of storage
-
-function getCostOfDelivery() {
-  const costOfDelivery = parseFloat(
-    document.getElementById("delivery-cost").innerText
-  );
-  return costOfDelivery;
+function getCost(product) {
+  const cost = parseFloat(document.getElementById(product + "-cost").innerText);
+  return cost;
 }
 
 //add event listener to 16 GB memory
