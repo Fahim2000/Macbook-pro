@@ -12,7 +12,7 @@ function calculateTotalPrice() {
 //function to apply promo code
 
 document.getElementById("promo-btn").addEventListener("click", function () {
-  const total = parseFloat(document.getElementById("final-total").innerText);
+  const total = parseFloat(document.getElementById("total-price").innerText);
   const promoCodeInput = document.getElementById("promo-input");
   const promoCode = promoCodeInput.value;
   if (promoCode == "stevekaku") {
